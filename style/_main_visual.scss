@@ -1,0 +1,128 @@
+.main_visual {
+  .main_slide {
+    .itm {
+      position: relative;
+      height: 100vh;
+      background: url(../images/bg.jpg) no-repeat center center/cover;
+    }
+    .slide_wrap {
+      display: flex;
+      position: absolute;
+      top: 100rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+      height: calc(100vh - 100rem);
+      .img_box {
+        padding: 90rem 0 0 0;
+        transform: translate(13.5%, -3%);
+        & img {
+          width: 900rem;
+          box-shadow: 0 14rem 28rem rgba(0, 0, 0, 0.25),
+            0 10rem 10rem rgba(0, 0, 0, 0.22);
+        }
+      }
+      .txt_box {
+        width: 1300rem;
+        padding: 350rem 0 0 160rem;
+        background: linear-gradient(to bottom, #67b26f, #4ca2cd);
+        transform: translate(-8%, 0);
+        z-index: -2;
+
+        & ul {
+          & li {
+            font-size: 30rem;
+            color: $color-white;
+            margin: 0 0 20rem 0;
+            & strong {
+              font-weight: 500;
+            }
+            .title {
+              display: block;
+              margin: 0 0 50rem 0;
+              font-family: "S-CoreDream-3Light";
+              font-size: 50rem;
+              font-weight: 700;
+            }
+            & span {
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1800px;
+    width: 100%;
+    user-select: none;
+    cursor: pointer;
+
+    .left {
+      position: absolute;
+      left: 15px;
+      width: 100px;
+      height: 30px;
+      text-align: right;
+      text-transform: uppercase;
+      font-size: 12px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 60%;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: #333;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 60%;
+        left: 0;
+        width: 20px;
+        height: 2px;
+        background: #333;
+        transform: rotate(-45deg);
+        transform-origin: left bottom;
+      }
+    }
+
+    .right {
+      position: absolute;
+      right: 15px;
+      width: 100px;
+      height: 30px;
+      text-transform: uppercase;
+      font-size: 12px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 60%;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: #333;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 60%;
+        right: 0;
+        width: 20px;
+        height: 2px;
+        background: #333;
+        transform: rotate(45deg);
+        transform-origin: right bottom;
+      }
+    }
+  }
+}

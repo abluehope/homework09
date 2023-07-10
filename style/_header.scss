@@ -1,0 +1,105 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: $color-white;
+  border-bottom: 1px solid $color-line;
+  z-index: 999;
+
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100rem;
+    h1 {
+      & a {
+        & img {
+          width: 150rem;
+        }
+      }
+    }
+  }
+
+  .gnb {
+    & > ul {
+      display: flex;
+      gap: 40rem;
+
+      & > li {
+        position: relative;
+
+        > a {
+          display: block;
+          font-size: 18rem;
+          line-height: 99rem;
+        }
+      }
+    }
+  }
+
+  .custom_service {
+    display: flex;
+    align-items: center;
+    gap: 30rem;
+
+    .la_chg {
+      position: relative;
+      span {
+        display: block;
+        cursor: pointer;
+      }
+      & ul {
+        display: none;
+
+        position: absolute;
+        top: 80rem;
+        left: 0;
+        width: 55rem;
+        border: 1px solid $color-line;
+        line-height: 29rem;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: -10rem;
+          left: 50%;
+          transform: translate(-50%, 0) rotate(45deg);
+          width: 20rem;
+          height: 20rem;
+          background: $color-white;
+          border: 1rem solid $color-line;
+        }
+
+        .on {
+          display: flex;
+        }
+
+        & li {
+          position: relative;
+          background: $color-white;
+
+          & a {
+            display: block;
+            text-align: center;
+            font-size: 18rem;
+          }
+        }
+
+        & li ~ li {
+          border-top: 1rem solid $color-line;
+        }
+      }
+    }
+
+    .search {
+      & i {
+        font-size: 20rem;
+        color: $color-main;
+      }
+    }
+  }
+}

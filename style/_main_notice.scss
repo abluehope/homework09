@@ -1,0 +1,42 @@
+.main_notice {
+  .inner {
+    .left {
+      .tab_menu {
+        .tab_link {
+          margin: 0 0 20rem 0;
+          display: flex;
+          gap: 10rem;
+          & li {
+            font-size: 25rem;
+            color: $color-gray;
+          }
+          .on {
+            font-weight: 500;
+            color: $color-main;
+          }
+        }
+        .tab_content {
+          .con {
+            & ul {
+              & li {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 0;
+                border-bottom: 1px solid $color-line;
+                & a {
+                  // 긴 제목 말줄임 처리
+                  display: block;
+                  width: 250px;
+                  padding: 0 5px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

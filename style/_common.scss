@@ -1,0 +1,17 @@
+body {
+  line-height: 1;
+  font-size: 16rem;
+  color: #444;
+}
+
+p {
+  word-break: keep-all;
+}
+
+.inner {
+  @include inner();
+}
+
+.sec {
+  @include defalut();
+}
