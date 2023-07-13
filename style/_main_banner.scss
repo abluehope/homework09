@@ -1,0 +1,47 @@
+.main_banner {
+  .inner {
+    display: flex;
+    gap: $size-gap;
+
+    > * {
+      flex: 1;
+    }
+
+    .introduce {
+      position: relative;
+      height: 200rem;
+      background: url(../images/main_banner_01.jpg) no-repeat center
+        center/cover;
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0 0 0 0;
+        background: rgba(0, 0, 0, 0.35);
+      }
+    }
+    .polite {
+      position: relative;
+      height: 200rem;
+      background: url(../images/main_banner_02.jpg) no-repeat center
+        center/cover;
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0 0 0 0;
+        background: rgba(0, 0, 0, 0.35);
+      }
+    }
+    .maru {
+      position: relative;
+      height: 200rem;
+      background: url(../images/main_banner_03.jpg) no-repeat center
+        center/cover;
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0 0 0 0;
+        background: rgba(0, 0, 0, 0.35);
+      }
+    }
+  }
+}

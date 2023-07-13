@@ -1,5 +1,11 @@
 .main_notice {
-  .inner {
+  .content {
+    display: flex;
+    gap: $size-gap;
+    > * {
+      flex: 1;
+      overflow: hidden;
+    }
     .left {
       .tab_menu {
         .tab_link {
@@ -17,24 +23,61 @@
         }
         .tab_content {
           .con {
+            display: none;
+            height: 0;
             & ul {
               & li {
                 display: flex;
                 justify-content: space-between;
-                padding: 10px 0;
+                padding: 10rem 0;
                 border-bottom: 1px solid $color-line;
                 & a {
                   // 긴 제목 말줄임 처리
                   display: block;
-                  width: 250px;
-                  padding: 0 5px;
+                  width: 250rem;
+                  padding: 0 5rem;
                   overflow: hidden;
                   text-overflow: ellipsis;
                   white-space: nowrap;
                 }
               }
             }
+            &.on {
+              display: block;
+              height: auto;
+            }
           }
+        }
+      }
+    }
+
+    .right {
+      .title {
+        margin: 0 0 20rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & span {
+          display: block;
+          font-size: 25rem;
+          font-weight: 500;
+          color: $color-main;
+        }
+        .banner_arrows {
+          cursor: pointer;
+          .left {
+            font-size: 20rem;
+          }
+          .right {
+            font-size: 20rem;
+          }
+        }
+      }
+
+      .banner_slide {
+        & figure {
+          height: 250rem;
+          object-fit: cover;
         }
       }
     }

@@ -1,0 +1,54 @@
+.main_newsletter {
+  background: $color-bg-gray;
+  .inner {
+    display: flex;
+    gap: $size-gap + 10rem;
+    > * {
+      flex: 1;
+    }
+
+    .img_box {
+      & img {
+        box-shadow: 10px 10px $color-point;
+      }
+    }
+
+    .txt_box {
+      padding: 230rem 0 0 0;
+      & span {
+        display: block;
+        margin: 0 0 10rem 0;
+        position: relative;
+        font-size: 24rem;
+        font-weight: 300;
+        color: $color-gray;
+        &::before {
+          content: "";
+          position: absolute;
+          top: -20rem;
+          left: 0;
+          width: 100rem;
+          height: 5rem;
+          background: $color-main;
+        }
+      }
+      & h2 {
+        margin: 0 0 30rem 0;
+        font-size: 50rem;
+
+        & strong {
+          font-size: 50rem;
+          font-weight: 700;
+          color: $color-main;
+        }
+      }
+      .desc {
+        margin: 0 0 60rem 0;
+        & p {
+          margin: 0 0 20rem 0;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

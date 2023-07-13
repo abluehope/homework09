@@ -7,11 +7,19 @@
   border-bottom: 1px solid $color-line;
   z-index: 999;
 
+  &.on {
+    .inner {
+      height: 80rem;
+    }
+  }
+
   .inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100rem;
+
+    transition: height 0.5s;
     h1 {
       & a {
         & img {

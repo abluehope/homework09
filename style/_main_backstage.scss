@@ -1,0 +1,29 @@
+.main_backstage {
+  position: relative;
+  background: url(../images/main_backstage_01.jpg) no-repeat fixed center
+    center/cover;
+
+  text-align: center;
+
+  .inner {
+    position: relative;
+  }
+
+  & h2 {
+    margin: 0 0 20rem 0;
+    font-size: 35rem;
+    font-weight: 700;
+    color: $color-white;
+  }
+  & p {
+    margin: 0 0 30rem 0;
+    line-height: 1.5;
+    color: $color-white;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
