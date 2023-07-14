@@ -33,10 +33,6 @@
         & span {
           color: $color-main;
         }
-
-        @media (max-width: 768px) {
-          flex: 0 0 0;
-        }
       }
 
       @media (max-width: 768px) {
