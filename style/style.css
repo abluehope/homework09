@@ -311,7 +311,7 @@ p {
 }
 @media (max-width: 768px) {
   .main_visual .main_slide .slide_wrap .img_box {
-    transform: translate(-100rem, -3%);
+    transform: translate(-70rem, -3%);
   }
 }
 .main_visual .main_slide .slide_wrap .img_box img {
@@ -333,19 +333,25 @@ p {
 @media (max-width: 768px) {
   .main_visual .main_slide .slide_wrap .txt_box {
     position: absolute;
-    bottom: 50rem;
+    bottom: 0;
     width: 510rem;
     height: 380rem;
-    padding: 90rem 0 0 20rem;
+    padding: 140rem 0 0 20rem;
   }
 }
 .main_visual .main_slide .slide_wrap .txt_box ul {
   margin: 0 0 40rem 0;
 }
 .main_visual .main_slide .slide_wrap .txt_box ul li {
+  margin: 0 0 20rem 0;
   font-size: 30rem;
   color: #fff;
-  margin: 0 0 20rem 0;
+}
+@media (max-width: 768px) {
+  .main_visual .main_slide .slide_wrap .txt_box ul li {
+    margin: 0 0 10rem 0;
+    font-size: 20rem;
+  }
 }
 .main_visual .main_slide .slide_wrap .txt_box ul li strong {
   font-weight: 500;
@@ -359,7 +365,8 @@ p {
 }
 @media (max-width: 768px) {
   .main_visual .main_slide .slide_wrap .txt_box ul li .title {
-    font-size: 35rem;
+    margin: 0 0 30rem 0;
+    font-size: 28rem;
   }
 }
 .main_visual .main_slide .slide_wrap .txt_box ul li span {
@@ -653,6 +660,11 @@ p {
 }
 .main_movie .content .txt_box h2 span {
   color: #1f2e7a;
+}
+@media (max-width: 768px) {
+  .main_movie .content .txt_box h2 {
+    flex: 0 0 0;
+  }
 }
 @media (max-width: 768px) {
   .main_movie .content .txt_box {

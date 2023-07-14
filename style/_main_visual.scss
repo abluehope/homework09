@@ -22,16 +22,12 @@
         transform: translate(13.5%, -3%);
 
         @media (max-width: 768px) {
-          transform: translate(-100rem, -3%);
+          transform: translate(-70rem, -3%);
         }
         & img {
           width: 900rem;
           box-shadow: 0 14rem 28rem rgba(0, 0, 0, 0.25),
             0 10rem 10rem rgba(0, 0, 0, 0.22);
-
-          // @media (max-width: 768px) {
-          //   width: 900rem;
-          // }
         }
 
         @media (max-width: 768px) {
@@ -47,18 +43,23 @@
 
         @media (max-width: 768px) {
           position: absolute;
-          bottom: 50rem;
+          bottom: 0;
           width: 510rem;
           height: 380rem;
-          padding: 90rem 0 0 20rem;
+          padding: 140rem 0 0 20rem;
         }
 
         & ul {
           margin: 0 0 40rem 0;
           & li {
+            margin: 0 0 20rem 0;
             font-size: 30rem;
             color: $color-white;
-            margin: 0 0 20rem 0;
+
+            @media (max-width: 768px) {
+              margin: 0 0 10rem 0;
+              font-size: 20rem;
+            }
             & strong {
               font-weight: 500;
             }
@@ -70,7 +71,8 @@
               font-weight: 700;
 
               @media (max-width: 768px) {
-                font-size: 35rem;
+                margin: 0 0 30rem 0;
+                font-size: 28rem;
               }
             }
             & span {

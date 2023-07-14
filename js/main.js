@@ -68,12 +68,14 @@ $(function () {
       {
         breakpoint: 768,
         settings: {
+          slidesToShow: 1,
           arrows: false,
         },
       },
       {
         breakpoint: 480,
         settings: {
+          slidesToShow: 1,
           arrows: false,
         },
       },
