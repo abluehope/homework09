@@ -5,6 +5,7 @@
   right: 0;
   background: $color-white;
   border-bottom: 1px solid $color-line;
+  word-break: keep-all;
   z-index: 999;
 
   &.on {
@@ -95,10 +96,9 @@
             text-align: center;
             font-size: 18rem;
           }
-        }
-
-        & li ~ li {
-          border-top: 1rem solid $color-line;
+          & ~ li {
+            border-top: 1rem solid $color-line;
+          }
         }
       }
     }

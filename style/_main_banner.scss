@@ -3,45 +3,49 @@
     display: flex;
     gap: $size-gap;
 
-    > * {
+    > div {
       flex: 1;
+    }
+
+    // @media (max-width: 768rem) {
+    //   display: grid;
+    // }
+
+    .desc {
+      display: flex;
+      flex-direction: column;
+      gap: 70rem;
+      padding: 45rem 35rem;
+
+      & strong {
+        font-size: 24rem;
+        color: $color-white;
+      }
+
+      .btn_white {
+        display: block;
+        align-self: flex-start;
+      }
     }
 
     .introduce {
       position: relative;
       height: 200rem;
-      background: url(../images/main_banner_01.jpg) no-repeat center
-        center/cover;
-      &::after {
-        content: "";
-        position: absolute;
-        inset: 0 0 0 0;
-        background: rgba(0, 0, 0, 0.35);
-      }
+      background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)),
+        url(../images/main_banner_01.jpg) no-repeat center center/cover;
     }
     .polite {
       position: relative;
       height: 200rem;
-      background: url(../images/main_banner_02.jpg) no-repeat center
-        center/cover;
-      &::after {
-        content: "";
-        position: absolute;
-        inset: 0 0 0 0;
-        background: rgba(0, 0, 0, 0.35);
-      }
+      background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)),
+        url(../images/main_banner_02.jpg) no-repeat center center/cover;
     }
     .maru {
       position: relative;
       height: 200rem;
-      background: url(../images/main_banner_03.jpg) no-repeat center
-        center/cover;
-      &::after {
-        content: "";
-        position: absolute;
-        inset: 0 0 0 0;
-        background: rgba(0, 0, 0, 0.35);
-      }
+      background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)),
+        url(../images/main_banner_03.jpg) no-repeat center center/cover;
+      color: $color-white;
     }
   }
 }

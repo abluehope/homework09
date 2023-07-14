@@ -9,7 +9,10 @@ p {
 }
 
 .btn {
+  display: inline-block;
   position: relative;
+  font-weight: 300;
+
   &::before {
     content: "";
     position: absolute;
@@ -36,6 +39,7 @@ p {
 .btn_white {
   position: relative;
   color: $color-white;
+  font-weight: 300;
   &::before {
     content: "";
     position: absolute;

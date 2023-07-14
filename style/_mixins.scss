@@ -1,7 +1,8 @@
 @mixin inner() {
   max-width: $size-inner;
   margin: 0 auto;
-  padding: 0 $size-gap/2;
+  // padding: 0 $size-gap/2;
+  padding: 0 15rem;
 }
 
 @mixin position_center() {

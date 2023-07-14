@@ -1,0 +1,33 @@
+.to_top {
+  position: fixed;
+  bottom: 100rem;
+  right: 100rem;
+  z-index: 999;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+
+  @media (max-width: 768rem) {
+    bottom: 0;
+    right: 0;
+  }
+
+  &.on {
+    bottom: 5%;
+    visibility: visible;
+    opacity: 1;
+
+    @media (max-width: 768rem) {
+      bottom: 0;
+    }
+  }
+
+  & i {
+    color: $color-white;
+    background: $color-main;
+    padding: 10rem;
+    font-size: 20rem;
+    cursor: pointer;
+  }
+}
