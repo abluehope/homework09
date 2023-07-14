@@ -6,9 +6,9 @@
       flex: 1;
       overflow: hidden;
     }
-    // @media screen and (max-width: 768rem) {
-    //   display: grid;
-    // }
+    @media screen and (max-width: 768px) {
+      display: grid;
+    }
 
     .left {
       .tab_menu {

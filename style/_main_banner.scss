@@ -7,9 +7,9 @@
       flex: 1;
     }
 
-    // @media (max-width: 768rem) {
-    //   display: grid;
-    // }
+    @media (max-width: 768px) {
+      display: grid;
+    }
 
     .desc {
       display: flex;

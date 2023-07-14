@@ -12,6 +12,52 @@
     .inner {
       height: 80rem;
     }
+
+    @media (max-width: 768px) {
+      .gnb {
+        & > ul {
+          & li {
+            line-height: 40px;
+          }
+        }
+      }
+
+      .custom_service {
+        .mobile_btn {
+          inset: 25rem 15rem auto auto;
+
+          &::before,
+          &::after {
+            background: #444;
+
+            &.on {
+              &::before,
+              &::after {
+                background: #fff;
+              }
+
+              & button {
+                &::before,
+                &::after {
+                  opacity: 0;
+                }
+              }
+            }
+          }
+
+          & button {
+            &::before,
+            &::after {
+              content: "";
+              position: absolute;
+              height: 2px;
+              background: #444;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
   }
 
   .inner {
@@ -25,7 +71,16 @@
       & a {
         & img {
           width: 150rem;
+
+          @media (max-width: 768px) {
+            width: 100rem;
+          }
         }
+      }
+
+      @media (max-width: 768px) {
+        position: fixed;
+        z-index: 1000;
       }
     }
   }
@@ -35,14 +90,44 @@
       display: flex;
       gap: 40rem;
 
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 0;
+        padding: 150px 18px 0 18px;
+      }
+
       & > li {
         position: relative;
+
+        @media (max-width: 768px) {
+          line-height: 40px;
+        }
 
         > a {
           display: block;
           font-size: 18rem;
           line-height: 99rem;
+
+          @media (max-width: 768px) {
+            font-size: 15rem;
+            line-height: 40rem;
+            color: $color-white;
+            border-bottom: 1px solid $color-white;
+          }
         }
+      }
+    }
+
+    @media (max-width: 768px) {
+      position: fixed;
+      inset: 0 auto 0 100%;
+      background: linear-gradient(to bottom, #67b26f, #4ca2cd);
+      width: 100%;
+
+      transition: 0.5s;
+
+      &.on {
+        inset: 0 auto 0 0;
       }
     }
   }
@@ -54,7 +139,12 @@
 
     .la_chg {
       position: relative;
-      span {
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+
+      & span {
         display: block;
         cursor: pointer;
       }
@@ -107,6 +197,79 @@
       & i {
         font-size: 20rem;
         color: $color-main;
+      }
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    .mobile_btn {
+      display: none;
+      transition: 0.5s;
+
+      @media (max-width: 768px) {
+        display: block;
+        position: fixed;
+        inset: 35px 15px auto auto;
+        background: $color-white;
+        border: 1px solid $color-line;
+        z-index: 1000;
+        width: 30px;
+        height: 30px;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          inset: 13px 5px auto 5px;
+          height: 2px;
+          background: #000;
+
+          transition: 0.5s;
+        }
+      }
+
+      &.on {
+        &::before {
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+        }
+
+        & button {
+          opacity: 0;
+        }
+      }
+
+      & button {
+        border: none;
+        outline: none;
+        background: transparent;
+
+        &::before {
+          content: "";
+          inset: 7px 5px auto 5px;
+          position: absolute;
+          height: 2px;
+          background: #000;
+          opacity: 1;
+
+          transition: 0.5s;
+        }
+
+        &::after {
+          content: "";
+          inset: auto 5px 7px 5px;
+          position: absolute;
+          height: 2px;
+          background: #000;
+          opacity: 1;
+
+          transition: 0.5s;
+        }
       }
     }
   }

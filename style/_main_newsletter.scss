@@ -16,9 +16,9 @@
     .txt_box {
       padding: 230rem 0 0 0;
 
-      // @media (max-width: 768rem) {
-      //   padding: 20rem 0 0 0;
-      // }
+      @media (max-width: 768px) {
+        padding: 20rem 0 0 0;
+      }
 
       & span {
         display: block;
@@ -37,27 +37,27 @@
           background: $color-main;
         }
 
-        // @media (max-width: 768rem) {
-        //   font-size: 18rem;
-        // }
+        @media (max-width: 768px) {
+          font-size: 18rem;
+        }
       }
       & h2 {
         margin: 0 0 30rem 0;
         font-size: 50rem;
 
-        // @media (max-width: 768rem) {
-        //   margin: 0 0 20rem 0;
-        //   font-size: 32rem;
-        // }
+        @media (max-width: 768px) {
+          margin: 0 0 20rem 0;
+          font-size: 32rem;
+        }
 
         & strong {
           font-size: 50rem;
           font-weight: 700;
           color: $color-main;
 
-          // @media (max-width: 768rem) {
-          //   font-size: 40rem;
-          // }
+          @media (max-width: 768px) {
+            font-size: 40rem;
+          }
         }
       }
       .desc {
