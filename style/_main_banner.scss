@@ -1,8 +1,9 @@
 .main_banner {
-  .inner {
+  padding-top: 0;
+
+  .content {
     display: flex;
     gap: $size-gap;
-
     > div {
       flex: 1;
     }
@@ -14,7 +15,7 @@
     .desc {
       display: flex;
       flex-direction: column;
-      gap: 70rem;
+      gap: 120rem;
       padding: 45rem 35rem;
 
       & strong {
@@ -30,19 +31,19 @@
 
     .introduce {
       position: relative;
-      height: 200rem;
+      height: 250rem;
       background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)),
         url(../images/main_banner_01.jpg) no-repeat center center/cover;
     }
     .polite {
       position: relative;
-      height: 200rem;
+      height: 250rem;
       background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)),
         url(../images/main_banner_02.jpg) no-repeat center center/cover;
     }
     .maru {
       position: relative;
-      height: 200rem;
+      height: 250rem;
       background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)),
         url(../images/main_banner_03.jpg) no-repeat center center/cover;
       color: $color-white;

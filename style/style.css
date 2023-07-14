@@ -442,12 +442,15 @@ p {
   transform-origin: right bottom;
 }
 
+.main_notice {
+  padding-bottom: 30rem;
+}
 .main_notice .content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 30rem;
 }
 .main_notice .content > * {
-  flex: 1;
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {
@@ -780,45 +783,48 @@ p {
   display: block;
 }
 
-.main_banner .inner {
+.main_banner {
+  padding-top: 0;
+}
+.main_banner .content {
   display: flex;
   gap: 30rem;
 }
-.main_banner .inner > div {
+.main_banner .content > div {
   flex: 1;
 }
 @media (max-width: 768px) {
-  .main_banner .inner {
+  .main_banner .content {
     display: grid;
   }
 }
-.main_banner .inner .desc {
+.main_banner .content .desc {
   display: flex;
   flex-direction: column;
-  gap: 70rem;
+  gap: 120rem;
   padding: 45rem 35rem;
 }
-.main_banner .inner .desc strong {
+.main_banner .content .desc strong {
   font-size: 24rem;
   color: #fff;
 }
-.main_banner .inner .desc .btn_white {
+.main_banner .content .desc .btn_white {
   display: block;
   align-self: flex-start;
 }
-.main_banner .inner .introduce {
+.main_banner .content .introduce {
   position: relative;
-  height: 200rem;
+  height: 250rem;
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)), url(../images/main_banner_01.jpg) no-repeat center center/cover;
 }
-.main_banner .inner .polite {
+.main_banner .content .polite {
   position: relative;
-  height: 200rem;
+  height: 250rem;
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)), url(../images/main_banner_02.jpg) no-repeat center center/cover;
 }
-.main_banner .inner .maru {
+.main_banner .content .maru {
   position: relative;
-  height: 200rem;
+  height: 250rem;
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)), url(../images/main_banner_03.jpg) no-repeat center center/cover;
   color: #fff;
 }
